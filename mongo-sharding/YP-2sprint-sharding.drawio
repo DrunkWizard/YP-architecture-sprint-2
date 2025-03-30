@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3" pages="2">
+  <diagram name="Original diagram" id="-H_mtQnk-PTXWXPvYvuk">
+    <mxGraphModel dx="2074" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zA23MoTUsTF4_91t8viU-2" value="MongoDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="560" y="280" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zA23MoTUsTF4_91t8viU-3" value="pymongo-api" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zA23MoTUsTF4_91t8viU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zA23MoTUsTF4_91t8viU-3" target="zA23MoTUsTF4_91t8viU-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Sharding" id="az1ArwvnjJCtLv6NXsoH">
+    <mxGraphModel dx="2074" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="lC4RjplwRaimKPthPzV1-0" />
+        <mxCell id="lC4RjplwRaimKPthPzV1-1" parent="lC4RjplwRaimKPthPzV1-0" />
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="lC4RjplwRaimKPthPzV1-2" target="TxuLjxs0u9ElP4MgRkvS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lC4RjplwRaimKPthPzV1-2" value="MongoDB&amp;nbsp;&lt;div&gt;Router&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="560" y="280" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lC4RjplwRaimKPthPzV1-3" value="pymongo-api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="360" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lC4RjplwRaimKPthPzV1-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="lC4RjplwRaimKPthPzV1-3" target="lC4RjplwRaimKPthPzV1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-0" value="MongoDB&amp;nbsp;&lt;div&gt;config&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="560" y="414" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-1" value="MongoDB&amp;nbsp;&lt;div&gt;shard1&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="780" y="220" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-2" value="MongoDB&amp;nbsp;&lt;div&gt;shard2&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="780" y="310" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-3" value="MongoDB&amp;nbsp;&lt;div&gt;shard3&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="780" y="414" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="lC4RjplwRaimKPthPzV1-2" target="TxuLjxs0u9ElP4MgRkvS-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="TxuLjxs0u9ElP4MgRkvS-3" target="TxuLjxs0u9ElP4MgRkvS-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="TxuLjxs0u9ElP4MgRkvS-2" target="TxuLjxs0u9ElP4MgRkvS-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="TxuLjxs0u9ElP4MgRkvS-1" target="TxuLjxs0u9ElP4MgRkvS-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="lC4RjplwRaimKPthPzV1-2" target="TxuLjxs0u9ElP4MgRkvS-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="lC4RjplwRaimKPthPzV1-1" source="lC4RjplwRaimKPthPzV1-2" target="TxuLjxs0u9ElP4MgRkvS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TxuLjxs0u9ElP4MgRkvS-11" value="Хэшированное шардирование по полю name" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lC4RjplwRaimKPthPzV1-1">
+          <mxGeometry x="670" y="464" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
